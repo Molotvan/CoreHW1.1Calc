@@ -1,8 +1,8 @@
 public class Main {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Calculator calc = Calculator.instance.get();
         int a = calc.plus.apply(1, 2);
-        int b = calc.minus.apply(1,1);
+        int b = calc.minus.apply(1, 1);
         int c = calc.divide.apply(a, b);
         calc.println.accept(c);
         //в данном случае в методе divide делитель равен нулю. Чтобы избежать ошибки, можно
